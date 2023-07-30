@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "oss_data_quality_frameworks_compare"
 version = "0.1.0"
-description = "Project with sample code to compare 3 popular DQ pyspark compatible frameworks"
-authors = ["Sidharth Bolar <Your Email>"]
+description = "Project with sample code to compare various popular DQ pyspark compatible frameworks"
+authors = ["Sidharth Bolar"]
 readme = "README.md"
 
 
@@ -15,6 +15,7 @@ scikit-learn = "^1.2.2"
 pydeequ = "^1.0.1"
 soda-core = "^3.0.41"
 soda-core-spark-df = "^3.0.41"
+markupsafe = "2.1.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^5.2"
