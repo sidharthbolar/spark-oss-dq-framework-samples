@@ -1,6 +1,6 @@
-    checks for sklearn_housing:
-      - row_count = 20640
-      - missing_count(MedInc) = 0
-      - duplicate_count(MedInc) = 0
-      - invalid_count(MedInc) = 0:
-          valid min: 0
+      checks for sklearn_housing:
+        - row_count = 20640
+        - missing_count(MedInc) = 0
+        - duplicate_count(MedInc) = 0
+        - invalid_count(MedInc) = 0:
+            valid min: 0

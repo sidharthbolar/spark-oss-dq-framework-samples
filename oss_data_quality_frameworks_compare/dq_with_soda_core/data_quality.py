@@ -8,7 +8,7 @@ from soda.scan import Scan
 def _initialise_soda_scan(df_name: str, spark: SparkSession) -> Scan:
     scan = Scan()
     scan.set_scan_definition_name(f"{df_name}")
-    scan.add_spark_session(spark,data_source_name=f"{df_name}")
+    scan.add_spark_session(spark, data_source_name=f"{df_name}")
     scan.set_data_source_name(f"{df_name}")
     scan.add_sodacl_yaml_str(
         f"""
@@ -46,10 +46,9 @@ def soda_core_constraint_verification(spark, df_name) -> tuple[dict, int]:
     ##################
     exit_code = scan.execute()
 
-
     # Inspect the scan result
     #########################
     results = scan.get_scan_results()
     print(scan.get_logs_text())
 
-    return results,exit_code
+    return results, exit_code
